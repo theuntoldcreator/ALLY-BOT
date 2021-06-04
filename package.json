@@ -1,0 +1,25 @@
+{
+    "name": "allyhealthbot",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "unirest": "^0.6.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "python app.py",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/its-me-satya/Self-Diagnosing-Health-Care-Chatbot-using-Machine-Learning--ALLY-HEALTH-BOT-.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/its-me-satya/Self-Diagnosing-Health-Care-Chatbot-using-Machine-Learning--ALLY-HEALTH-BOT-/issues"
+    },
+    "homepage": "https://github.com/its-me-satya/Self-Diagnosing-Health-Care-Chatbot-using-Machine-Learning--ALLY-HEALTH-BOT-#readme"
+}
