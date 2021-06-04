@@ -1,0 +1,21 @@
+- - is a doctor available ?
+  - sorry, all doctors are occupied at the moment. We will connect you to a doctor soon. Do you want to book an appointment?
+- - hi can i see a doctor ?
+  - all doctors are attending patients. we shall revert to your request soon. Do you want to book an appointment?
+- - i want to talk to a doctor
+  - you shall be called once the doctor is available. Do you want to book an appointment?
+- - can you book an apointment with a doctor?
+  - yes please Fill the form; 'Patient Name:  Date:  Doctor: Hospital:'
+- - Patient Name Date Time Doctor Hospital
+  - appointment details saved. you shall be contacted shortly.
+- - thanks
+  - happy to help!
+- - link
+  ---
+title: "My R-Markdown Document"
+author: "[My name here](a hyperlink to my institutional page)  \n[I'm on Twitter](hyperlink)"
+output:
+  pdf_document: default
+  html_document: default
+---
+  
