@@ -23,7 +23,7 @@ overflow-x: hidden;">
     <audio control autoplay="autoplay" src='/static/Ally.mp3'></audio>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="navbar-brand nav-header">
-            <a class="navbar-brand mx-5" href="/"><i class="fas fa-arrow-left mx-1"></i>Back
+            <a class="navbar-brand mx-2" href="/"><i class="fas fa-arrow-left mx-1"></i>Back
             </a>
         </div>
 
@@ -31,78 +31,83 @@ overflow-x: hidden;">
 
 
     </nav>
-
-
-    <header>
-        <div class="pre">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve" width="30" height="30">
-            
-                    <rect fill="#FBBA44" width="15" height="15">
-                  <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="1.7s" values="0,0;15,0;15,15;0,15;0,0;" repeatCount="indefinite"/>
-                    </rect>	
-            
-                    <rect x="15" fill="#E84150" width="15" height="15">
-                  <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="1.7s" values="0,0;0,15;-15,15;-15,0;0,0;" repeatCount="indefinite"/>
-                    </rect>	
-                  
-                    <rect x="15" y="15" fill="#62B87B" width="15" height="15">
-                  <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="1.7s" values="0,0;-15,0;-15,-15;0,-15;0,0;" repeatCount="indefinite"/>
-                    </rect>	
-            
-                    <rect y="15" fill="#2F6FB6" width="15" height="15">
-                  <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="1.7s" values="0,0;0,-15;15,-15;15,0;0,0;" repeatCount="indefinite"/>
-                    </rect>
-                </svg>
-        </div>
-        <h1 class="text-center">Ally Here!!</h1>
-    </header>
-    <div class="container text-center">
-
-
-        <div>
-            <div id="chatbox">
-                <p class="botText"><span>Hi There! What is your name?</span></p>
+    <main style="
+    overflow-y: auto;">
+        <header>
+            <div class="pre">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve" width="30" height="30">
+        
+                <rect fill="#FBBA44" width="15" height="15">
+              <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="1.7s" values="0,0;15,0;15,15;0,15;0,0;" repeatCount="indefinite"/>
+                </rect>	
+        
+                <rect x="15" fill="#E84150" width="15" height="15">
+              <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="1.7s" values="0,0;0,15;-15,15;-15,0;0,0;" repeatCount="indefinite"/>
+                </rect>	
+              
+                <rect x="15" y="15" fill="#62B87B" width="15" height="15">
+              <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="1.7s" values="0,0;-15,0;-15,-15;0,-15;0,0;" repeatCount="indefinite"/>
+                </rect>	
+        
+                <rect y="15" fill="#2F6FB6" width="15" height="15">
+              <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="1.7s" values="0,0;0,-15;15,-15;15,0;0,0;" repeatCount="indefinite"/>
+                </rect>
+            </svg>
             </div>
-            <div id="userInput">
-                <input id="textInput" class="form-control-lg bdr-2" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" type="text" name="msg" placeholder="Message">
+            <h1 class="text-center">Ally Here!!</h1>
+        </header>
+        <div class="container text-center">
 
-                <input id="buttonInput" class="btn-lg btn-dark" type="submit" value="Send">
+
+            <div>
+                <div id="chatbox">
+                    <p class="botText"><span>Hi There! What is your name?</span></p>
+                </div>
+                <div id="userInput" class="p-3">
+                    <input id="textInput" class="form-control-lg bdr-2" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" type="text" name="msg" placeholder="Message">
+                    <br><br>
+                    <input id="buttonInput" class="btn-lg btn-dark" type="submit" value="Send">
+                </div>
             </div>
-        </div>
 
 
-        <script type="text/javascript">
-            function getBotResponse() {
-                var rawText = $("#textInput").val();
-                var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
-                $("#textInput").val("");
-                $("#chatbox").append(userHtml);
-                document.getElementById('userInput').scrollIntoView({
-                    block: 'start',
-                    behavior: 'smooth'
-                });
-                $.get("/get", {
-                    msg: rawText
-                }).done(function(data) {
-                    var botHtml = '<p class="botText"><span>' + data + '</span></p>';
-                    $("#chatbox").append(botHtml);
+
+
+            <script type="text/javascript">
+                function getBotResponse() {
+                    var rawText = $("#textInput").val();
+                    var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+                    $("#textInput").val("");
+                    $("#chatbox").append(userHtml);
                     document.getElementById('userInput').scrollIntoView({
                         block: 'start',
                         behavior: 'smooth'
                     });
-                });
-            }
-            $("#textInput").keypress(function(e) {
-                if (e.which == 13) {
-                    getBotResponse();
+                    $.get("/get", {
+                        msg: rawText
+                    }).done(function(data) {
+                        var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+                        $("#chatbox").append(botHtml);
+                        document.getElementById('userInput').scrollIntoView({
+                            block: 'start',
+                            behavior: 'smooth'
+                        });
+                    });
                 }
-            });
-            $("#buttonInput").click(function() {
-                getBotResponse();
-            })
-        </script>
+                $("#textInput").keypress(function(e) {
+                    if (e.which == 13) {
+                        getBotResponse();
+                    }
+                });
+                $("#buttonInput").click(function() {
+                    getBotResponse();
+                })
+            </script>
 
-    </div>
+        </div>
+    </main>
+
+
     <footer class="text-center" style="margin-top: 2rem;">Made With ♥</footer>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-t6I8D5dJmMXjCsRLhSzCltuhNZg6P10kE0m0nAncLUjH6GeYLhRU1zfLoW3QNQDF" crossorigin="anonymous"></script>
