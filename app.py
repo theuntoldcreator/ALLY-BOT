@@ -25,8 +25,8 @@ english_bot = ChatBot('Bot',
    
 ],
 trainer='chatterbot.trainers.ListTrainer')
-english_bot.set_trainer(ListTrainer)
 
+trainer = ListTrainer(english_bot)
 
 @app.route("/")
 def home():
