@@ -1,3 +1,16 @@
 bot : Hi There! I am a medical chatbot. You can begin conversation by typing in a message and pressing enter.
-user : my name is sai
-bot : - Whats Your Age
+user : this is pavan
+bot :   - Hello, How can i help you
+
+user : i got covid positive
+bot :   - Firstly dont get panic , be strong , just take proper medication and you'll get cured. on first basis drink hot water and use multivitamin tablets like "vitamin c" and eat a lot of food. wear a mask & consult doctor for medication . Check out the Covid Section for more instruction
+
+user : i am sick
+bot :   - okay. can you tell me what's wrong? what are your symptoms?
+
+user : feeling cold
+bot :   - okay. can you tell me what's wrong? what are your symptoms?
+
+user : who are you?
+bot :   - I am Alley, Your Health bot and i'm here to serve you
+

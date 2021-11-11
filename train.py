@@ -9,12 +9,9 @@ except:
 	print('No database found. Creating new database.')
 
 english_bot = ChatBot('Bot')
-trainer = ListTrainer(english_bot)
+english_bot.set_trainer(ListTrainer)
 for file in os.listdir('data'):
         print('Training using '+file)
         convData = open('data/' + file).readlines()
-        
-        trainer.train(convData)
+        english_bot.train(convData)
         print("Training completed for "+file)
-    
-

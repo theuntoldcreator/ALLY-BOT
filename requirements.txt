@@ -1,8 +1,8 @@
 appdirs==1.4.4
 certifi==2020.12.5
 chardet==4.0.0
-ChatterBot==1.0.4
-chatterbot-corpus==1.2.0
+ChatterBot==0.8.0
+chatterbot-corpus==1.1.0
 click==8.0.3
 distlib==0.3.3
 filelock==3.0.12
@@ -22,7 +22,7 @@ oauthlib==3.1.0
 pgrep==2020.12.3
 pymongo==3.11.3
 PySide6==6.0.2
-python-dateutil==2.7.0
+python-dateutil==2.6.0
 python-twitter==3.5
 PyYAML==3.12
 regex==2020.11.13
@@ -32,7 +32,7 @@ scikit-learn==0.24.1
 scipy==1.6.1
 shiboken6==6.0.2
 six==1.15.0
-SQLAlchemy==1.2.18
+SQLAlchemy==1.1.0
 threadpoolctl==2.1.0
 tqdm==4.58.0
 typing-extensions==3.10.0.0
