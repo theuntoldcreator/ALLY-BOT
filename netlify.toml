@@ -1,0 +1,4 @@
+[build]
+    base = ""
+    command = "python app.py"
+    publish = "site"
