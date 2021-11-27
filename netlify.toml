@@ -8,5 +8,5 @@
   publish = "site"
 
   # Default build command.
-  command = "pip install -r requirements.txt"
+  command = "python app.py"
 
