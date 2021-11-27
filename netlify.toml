@@ -3,7 +3,4 @@
   publish = "/site"
   command = "npm run app"
 
-  [[redirects]]
-  from = "/*"
-  to="/templates/home.html"
-  status = 200
+  
