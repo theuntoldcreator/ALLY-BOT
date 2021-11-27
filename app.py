@@ -28,7 +28,7 @@ trainer='chatterbot.trainers.ListTrainer')
 
 trainer = ListTrainer(english_bot)
 
-@app.route("/home")
+@app.route("/")
 def home():
     return render_template("home.html")
 
