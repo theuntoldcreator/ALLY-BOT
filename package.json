@@ -2,7 +2,7 @@
   "name": "Ally-Bot",
   "version": "1.0.0",
   "description": "",
-  "main": "app.py",
+  "main": "/app.py",
   "scripts": {
     "build": "python app.py",
     "train": "python train.py",
