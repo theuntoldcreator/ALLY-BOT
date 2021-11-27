@@ -10,4 +10,3 @@
   # Default build command.
   command = "pip install -r requirements.txt"
 
-    PYTHON_VERSION = "3.7.2"
