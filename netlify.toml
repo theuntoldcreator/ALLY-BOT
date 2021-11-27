@@ -1,4 +1,4 @@
 [build]
-  base = "./templates"
-  publish = "./templates/output"
+  base = "/"
+  publish = "/site"
   command = "npm run app"
