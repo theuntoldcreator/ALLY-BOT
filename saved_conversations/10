@@ -1,19 +1,1 @@
 bot : Hi There! I am a medical chatbot. You can begin conversation by typing in a message and pressing enter.
-user : thios is sai
-bot : - Hello, How can i help you
-user : i got fever
-bot : - A fever is an increase in body temperature above the normal range. However, body temperature varies between people, with different levels of activity and at different times of the day. Medical textbooks differ in their definition of the highest normal body temperature. Fever generally can be defined as an early morning temperature higher than 99 degrees Fahrenheit or a temperature higher than 100 degrees Fahrenheit at any time of the day
-user : i got covid
-bot : - Firstly dont get panic , be strong , just take proper medication and you'll get cured. on first basis drink hot water and use multivitamin tablets like "vitamin c" and eat a lot of food. wear a mask & consult doctor for medication . Check out the Covid Section for more instruction
-user : my name is pavan
-bot : - Whats Your Age
-user : my age is 21
-bot : - Where are you from
-user : i live in vellore
-bot : - Okay location stored. Welcome to medical portal. Say Hi!
-user : hi
-bot : - Hello. How are you feeling today?
-user : i got covid positive
-bot : - Firstly dont get panic , be strong , just take proper medication and you'll get cured. on first basis drink hot water and use multivitamin tablets like "vitamin c" and eat a lot of food. wear a mask & consult doctor for medication . Check out the Covid Section for more instruction
-user : i got fever
-bot : - A fever is an increase in body temperature above the normal range. However, body temperature varies between people, with different levels of activity and at different times of the day. Medical textbooks differ in their definition of the highest normal body temperature. Fever generally can be defined as an early morning temperature higher than 99 degrees Fahrenheit or a temperature higher than 100 degrees Fahrenheit at any time of the day
